@@ -1,9 +1,24 @@
+body {
+    background-color: white;
+    color: black;;
+    float:right;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+i.skill {
+    font-size: 90px;
+    padding: 12px;
+}
+
+
 .jumbotron {
 background-image: url("../images/dp.JPG");
 background-size: cover;
 height: 864px;
 margin-top: -50px;
 }
+
 
 .wrapper {
     display: flex;
@@ -27,12 +42,7 @@ margin-top: -50px;
     float: left;
 }
 
-body {
-    background-color: white;
-    color: black;;
-    float:right;
-    width: 80%;
-}
+
 
 #display-pic {
     height: 14rem;;
@@ -68,4 +78,13 @@ a:hover, a:active { text-decoration: underline; color:black }
 
 .fa-span{
     padding-right: 10px;
+}
+
+.dark-section{
+    background-color: lightgrey;
+}
+
+.skills-container2{
+    margin: auto;
+    width: 90%;
 }
