@@ -42,6 +42,11 @@ margin-top: -50px;
     float: left;
 }
 
+.project-pic {
+    margin: auto;
+    height: 14rem;
+    width: 14rem;
+}
 
 
 #display-pic {
@@ -87,4 +92,10 @@ a:hover, a:active { text-decoration: underline; color:black }
 .skills-container2{
     margin: auto;
     width: 90%;
+}
+
+.footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 8px;
 }
