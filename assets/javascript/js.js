@@ -3,7 +3,7 @@ $(document).ready(function () {
         strings: ["Web Developer based in Toronto.","I'm always looking to create fun and meaningful content.",
             "Currently a Data and Reporting Analyst for a Cosmetics company.",
             "I’m passionate about personal finance...", "mechanical watches..",
-            "UFC/mixed martial arts", "..and food.","Feel free to browse my page and let me know what you think on the form below."
+            "UFC/mixed martial arts", "..and food.","Feel free to browse my page and let me know what you think."
         ],
         speed: 70,
         breakLines: false,

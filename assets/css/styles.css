@@ -15,7 +15,7 @@ i.skill {
 .jumbotron {
 background-image: url("../images/coffeecode.jpg");
 background-size: cover;
-height: 864px;
+min-height: 864px;
 text-align: center;
 padding-top: 300px;
 }
