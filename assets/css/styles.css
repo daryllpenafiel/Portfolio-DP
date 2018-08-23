@@ -141,7 +141,7 @@ a:hover, a:active { text-decoration: underline; color:black }
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: black;
   }
 
   .container-overlay:hover .overlay {
@@ -172,4 +172,13 @@ a:hover, a:active { text-decoration: underline; color:black }
     text-align: center;
   }
 
-/*---end project pics with overlay--*/
+/* ---end project pics with overlay--
+//Responsive side */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}

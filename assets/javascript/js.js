@@ -15,7 +15,8 @@ $(document).ready(function () {
         theme: "minimal"
     });
 
-    $('#sidebarCollapse').on('click', function () {
+    $(document).on('click',"#sidebarCollapse",function () {
+        console.log("sidebar click");
         // open or close navbar
         $('#sidebar').toggleClass('active');
         // close dropdowns
@@ -25,14 +26,23 @@ $(document).ready(function () {
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
 
+    (function($) {
+        "use strict";
+        // manual carousel controls
+        $('.next').click(function(){ $('.carousel').carousel('next');return false; });
+        $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
+        
+    })(jQuery);
+
     //FIREBASE
 
-    firebase.initializeApp(config);
     var database = firebase.database().ref();
 
     //record form submissions
-    $("#form-submit-button").on("click", function () {
+    $(document).on("click","#form-submit-button", function () {
         event.preventDefault();
+
+        console.log("click");
 
         var newMessage = {
             name: $("#form-name").val(),
@@ -43,19 +53,12 @@ $(document).ready(function () {
         if (newMessage.name && newMessage.email && newMessage.message) {
             database.push(newMessage);
             $(".form-control").val("");
-            alert("Thanks for the message! I'll look into it and get back to you. - D")
+            $("#submit-message-modal").modal('show');
         } else {
             alert("Please complete all fields before hitting 'submit'.")
         }
     })
 
-    (function($) {
-        "use strict";
-    
-        // manual carousel controls
-        $('.next').click(function(){ $('.carousel').carousel('next');return false; });
-        $('.prev').click(function(){ $('.carousel').carousel('prev');return false; });
-        
-    })(jQuery);
+   
 
 });

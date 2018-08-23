@@ -43,38 +43,36 @@
             <ul class="list-unstyled components">
 
                 <li>
-                    <a href="#typing">About Me</a>
+                    <a href="#typing" data-toggle="collapse" aria-expanded="false">About Me</a>
                 </li>
                 <li>
-                    <a href="#projects-section">Projects</a>
+                    <a href="#projects-section" data-toggle="collapse" aria-expanded="false">Projects</a>
                 </li>
                 <li>
-                    <a href="#work-experience">Experience</a>
+                    <a href="#work-experience" data-toggle="collapse" aria-expanded="false">Experience</a>
                 </li>
                 <li>
-                    <a href="#education-div">Education</a>
+                    <a href="#education-div" data-toggle="collapse" aria-expanded="false">Education</a>
                 </li>
 
                 <li>
-                    <a href="#contact-me">Contact</a>
+                    <a href="#contact-me" data-toggle="collapse" aria-expanded="false">Contact</a>
                 </li>
             </ul>
 
         </nav>
 
-        <!-- Page Content
         <div id="content">
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
                         <i class="fas fa-align-left"></i>
                         <span>Toggle Sidebar</span>
                     </button>
                 </div>
             </nav>
-        </div> -->
+        </div>
     </div>
 
     <div class="jumbotron">
@@ -120,7 +118,8 @@
                 <div class="container-overlay  col-xs-12 col-sm-6  col-md-4">
                     <img class="project-pic" src="./assets/images/mcguessing.PNG" alt="Card image cap">
                     <div class="overlay">
-                        <div class="overlay-text">It's my take on "Hangman" with a theme focused on one of my favorite fast food chains. This is one of my first projects using Javascript.</div>
+                        <div class="overlay-text">It's my take on "Hangman" with a theme focused on one of my favorite fast food chains. This is one
+                            of my first projects using Javascript.</div>
                         <a class="btn btn-primary overlay-link" href="https://daryllpenafiel.github.io/McGuessing-Game/" role="button">Checkout page</a>
                     </div>
                 </div>
@@ -137,7 +136,8 @@
                 <div class="container-overlay col-xs-12 col-sm-6  col-md-4">
                     <img class="project-pic" src="./assets/images/adulting.PNG" alt="Card image cap">
                     <div class="overlay">
-                        <div class="overlay-text">Web app about being an adult using Giphy API. You can click the different "adulting" topics and it will dynamically show you the latest and best Gifs about that topic.</div>
+                        <div class="overlay-text">Web app about being an adult using Giphy API. You can click the different "adulting" topics and it
+                            will dynamically show you the latest and best Gifs about that topic.</div>
                         <a class="btn btn-primary overlay-link" href="https://daryllpenafiel.github.io/Adulting/" role="button">Checkout page</a>
                     </div>
                 </div>
@@ -263,7 +263,9 @@
                             <i class="fas fa-graduation-cap "></i>
                             <span>University of Toronto</span>
                             <h4 class="card-title ">Full Stack Web Development Coding Bootcamp</h4>
-                            <p class="card-text ">A 24 week intensive bootcamp dedicated to and building web applications. Topics covered inlude HTML5, CSS3, JavaScript, jQuery, Node.js, Express, Responsive Design, Heroku, Git, User Authentication, React.js, MySQL, MongoDB, etc.</p>
+                            <p class="card-text ">A 24 week intensive bootcamp dedicated to and building web applications. Topics covered inlude
+                                HTML5, CSS3, JavaScript, jQuery, Node.js, Express, Responsive Design, Heroku, Git, User Authentication,
+                                React.js, MySQL, MongoDB, etc.</p>
 
                         </div>
                     </div>
@@ -277,7 +279,12 @@
                             <i class="fas fa-graduation-cap "></i>
                             <span>Ateneo De Manila University</span>
                             <h4 class="card-title ">Business Management, minor in Financial Management</h4>
-                            <p class="card-text ">A general business management program designed to develop students' entrepreneurial insight and develop future industry leaders. Major courses included Accounting, Statistics, Finance, Marketing, Strategy Formulation and Implementation, Operations Management, etc. Minor degree in Finance covered Investment Analysis, Portfolio Management, and Financial Reporting and Analysis.</p>
+                            <p class="card-text ">A general business management program designed to develop students' entrepreneurial insight and
+                                develop future industry leaders. Major courses included Accounting, Statistics, Finance,
+                                Marketing, Strategy Formulation and Implementation, Operations Management, etc. Minor degree
+                                in Finance covered Investment Analysis, Portfolio Management, and Financial Reporting and
+                                Analysis.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -300,19 +307,19 @@
                         <div class="spacer "></div>
                         <div class="form-group ">
                             <label for="form-name ">Name</label>
-                            <input type="name " class="form-control " id="form-name " placeholder="Name ">
+                            <input type="name " class="form-control " id="form-name" placeholder="Name ">
                         </div>
 
                         <div class="form-group ">
                             <label for="form-email ">Email address</label>
-                            <input type="email " class="form-control " id="form-email " placeholder="name@example.com ">
+                            <input type="email " class="form-control " id="form-email" placeholder="name@example.com ">
                         </div>
 
                         <div class="form-group ">
                             <label for="form-message ">Message</label>
-                            <textarea class="form-control " id="form-message " rows="8 "></textarea>
+                            <textarea class="form-control " id="form-message" rows="8 "></textarea>
                         </div>
-                        <button type="button " class="btn btn-info " id="form-submit-button ">Send</button>
+                        <button type="button " class="btn btn-info " id="form-submit-button">Send</button>
                     </form>
                 </div>
 
@@ -349,17 +356,32 @@
 
             </div>
             <div class="spacer"></div>
+
     </section>
-
-
 
     <section class="footer">
         <span>&copy; Daryll Penafiel 2018</span>
     </section>
 
+    <!-- Modal -->
+    <div class="modal fade" id="submit-message-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Message</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Thank you for sending me a message. I will get back to you as soon as I can!
+                </div>
 
-
+            </div>
+        </div>
+    </div>
     <!--carousel-->
+
     <script src="./assets/javascript/jquery.min.js"></script>
     <script src="./assets/javascript/owl.carousel.js"></script>
     <script>
@@ -399,10 +421,21 @@
         crossorigin="anonymous "></script>
     <!-- jQuery Custom Scroller CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js "></script>
-    <!--FORM JS-->
-    <script src="./assets/javascript/config.js "></script>
     <!--DP JS-->
     <script src="./assets/javascript/js.js "></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+
+    <script>
+        var config = {
+            apiKey: "AIzaSyArt24JF114IOPVvvrwyVqGUmnrL9VuaYs",
+            authDomain: "portfolio-f5ee6.firebaseapp.com",
+            databaseURL: "https://portfolio-f5ee6.firebaseio.com",
+            projectId: "portfolio-f5ee6",
+            storageBucket: "portfolio-f5ee6.appspot.com",
+            messagingSenderId: "525890286384"
+        };
+        firebase.initializeApp(config);
+    </script>
 
 </body>
 
