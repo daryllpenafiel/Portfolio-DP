@@ -79,6 +79,10 @@ section{
     position: relative;
 }
 
+div.card{
+    min-height: 250px;
+}
+
 .background {
     background-color:whitesmoke;
 }
@@ -124,7 +128,7 @@ a:hover, a:active { text-decoration: underline; color:black }
 .container-overlay {
     position: relative;
     width: 50%;
-    height: 14rem;
+    height: 16rem;
   }
   
 .overlay {
@@ -141,12 +145,12 @@ a:hover, a:active { text-decoration: underline; color:black }
   }
 
   .container-overlay:hover .overlay {
-    opacity: 0.9;
+    opacity: 0.92;
   }
 
   .overlay-text {
     color: white;
-    font-size: 20px;
+    font-size: 14px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -160,7 +164,7 @@ a:hover, a:active { text-decoration: underline; color:black }
     color: white;
     font-size: 16px;
     position: absolute;
-    top: 70%;
+    top: 85%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
