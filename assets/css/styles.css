@@ -44,7 +44,7 @@ margin-bottom: 0;
 }
 
 #sidebar {
-    width: 20%;
+    width: 23%;
     position: fixed;
     top: 0;
     left: 0;
@@ -123,6 +123,7 @@ a:hover, a:active { text-decoration: underline; color:black }
 .project-pic {
     height: 100%;
     width: 100%;
+    image-rendering: auto;
 }
 
 .container-overlay {
