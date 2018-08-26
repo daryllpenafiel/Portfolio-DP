@@ -1,10 +1,10 @@
 $(document).ready(function () {
     new TypeIt('#typing', {
-        strings: ["Web Developer based in Toronto.","I'm always looking to create fun and meaningful content.",
-            "Currently a Data and Reporting Analyst for a Cosmetics company.",'I live by the principle of "magis" - a Latin word meaning "more" or "greater".',
-            "Outside of coding, I'm passionate about personal finance, mechanical watches, UFC, and food.","Feel free to browse my page and let me know what you think."
+        strings: ["Web Developer based in Toronto.",/*"I'm always looking to create fun and meaningful content.",*/
+            "Background in Data and Reporting Analysis.",'I live by the principle of "magis".',
+            "Passionate about: personal finance, mechanical watches, food.","Let me know what you think!","Web developer based in Toronto."
         ],
-        speed: 70,
+        speed: 80,
         breakLines: false,
         autoStart: true
     });
