@@ -219,7 +219,7 @@ a:active {
 
 @media (max-width: 768px) {
     .jumbotron {
-        background-image: url("../images/portrait.jpg");
+        background-image: url("../images/dpp.jpg");
         background-size: cover;
         text-align: center;
         padding-top: 300px;
